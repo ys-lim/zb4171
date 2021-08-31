@@ -17,6 +17,7 @@ kallisto quant -i ~/zb4171_project/Mus_musculus.GRCm39.cdna.all.fa.gz.kali -o ~/
 
 ## 250,582 reads in fusion text file
 
+####### IGNORE THIS PART ABOUT SALMON ##############
 # salmon index
 ~/zb4171_project/salmon-1.5.2_linux_x86_64/bin/salmon index -t ~/zb4171_project/Mus_musculus.GRCm39.cdna.all.fa.gz -i ~/zb4171_project/salmon/index
 
@@ -31,6 +32,7 @@ gunzip -c /mnt/gtklab01/ira/tdp43_cnp_scn_21d/raw_reads/Floxed_TDP43_2744_1.fq.g
 @ST-E00192:1021:H7KHCCCX2:7:1101:20638:1731 1:N:0:NAGTTCCT
 @ST-E00192:1021:H7KHCCCX2:7:1101:24150:1731 1:N:0:NAGTTCCT
 @ST-E00192:1021:H7KHCCCX2:7:1101:15371:1749 1:N:0:NAGTTCCT
+####################################################
 
 # Trying sailfish
 https://github.com/kingsfordgroup/sailfish/releases/tag/v0.10.0 #centos one

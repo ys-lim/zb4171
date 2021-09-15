@@ -36,8 +36,10 @@ sailfish quant -l IU -i sailfish_index_15/ -1 <(gunzip -c data/kal_pseudobam_ctr
 
 ```
 
-4. Comparison of quantification between ko and ctrl sample
+4. Comparison of quantification between ko and ctrl sample 
+
+> **_NOTE:_**  quant.sf output file from the sailfish quant of KO and CTRL samples have been renamed as quant_ko.sf and quant_ctrl.sf respectively
 
 ```bash
-comp_sailfish_quant.py sailfish_out_15_ko/quant.sf sailfish_out_15_ctrl/quant.sf comp.tsv
+python comp_sailfish_quant.py quant_ko.sf quant_ctrl.sf comp.tsv
 ```

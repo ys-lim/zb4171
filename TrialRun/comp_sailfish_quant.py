@@ -19,8 +19,8 @@ def comp_quants(q1, q2, file):
                 # Assert same transcript
                 assert q1_line[0] == q2_line[0], "Different transcripts"
 
-                if float(q1_line[3]) > 0 or float(q2_line[3]) > 0:
-                    dif = float(q1_line[3]) - float(q2_line[3])
+                if float(q1_line[4]) > 0 or float(q2_line[4]) > 0:
+                    dif = float(q1_line[4]) - float(q2_line[4])
                     eff_quants.append(q1_line + q2_line[3:] + [dif])
     eff_quants.sort(key=lambda x:x[-1], reverse=True)
     with open(file, "w") as f:

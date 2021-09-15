@@ -21,6 +21,7 @@ kallisto quant -i Mus_musculus.GRCm39.cdna.all.fa.gz.kali -t 4 -o kal_pseudobam_
 ```bash 
 # For each sample
 samtools collate -u -O pseudoalignments.bam | samtools fastq -f 12 -1 paired1.fq.gz -2 paired2.fq.gz
+# -f 12: read and mate both unmapped
 ```
 
 3. Sailfish quant

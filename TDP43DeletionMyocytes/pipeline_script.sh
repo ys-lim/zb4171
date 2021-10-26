@@ -6,13 +6,12 @@
 # use transcriptome here already built: /mnt/gtklab01/yongshan/project/21sept_scn/Mus_musculus.GRCm39.cdna.all.fa.gz.kali
 
 
-# controls
-SRR5074051/SRR5074051_1.fastq.gz
-SRR5074077/SRR5074077_2.fastq.gz
-# knockout
-SRR5074186/SRR5074186_2.fastq.gz
-SRR5074121/SRR5074121_1.fastq.gz
-
+# controls samples
+# SRR5074051
+# SRR5074077
+# knockout samples
+# SRR5074186
+# SRR5074121
 
 # kallisto quant
 # control 1

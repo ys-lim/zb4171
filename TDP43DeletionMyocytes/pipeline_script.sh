@@ -161,3 +161,10 @@ python3 extract_transcripts_with_counts.py SRR5074051/quant.sf SRR5074051/output
 python3 extract_transcripts_with_counts.py SRR5074077/quant.sf SRR5074077/outputTPM SRR5074077/outputCounts
 python3 extract_transcripts_with_counts.py SRR5074121/quant.sf SRR5074121/outputTPM SRR5074121/outputCounts
 python3 extract_transcripts_with_counts.py SRR5074186/quant.sf SRR5074186/outputTPM SRR5074186/outputCounts
+
+# transcript to gene using r script
+
+Rscript transcript_to_gene.r ./Mus_musculus.GRCm39.cdna.all.fa SRR5074051/outputTPM SRR5074051/outputCounts SRR5074051/outputTPM_with_gene SRR5074051/outputCounts_with_gene
+Rscript transcript_to_gene.r ./Mus_musculus.GRCm39.cdna.all.fa SRR5074077/outputTPM SRR5074077/outputCounts SRR5074077/outputTPM_with_gene SRR5074077/outputCounts_with_gene
+Rscript transcript_to_gene.r ./Mus_musculus.GRCm39.cdna.all.fa SRR5074121/outputTPM SRR5074121/outputCounts SRR5074121/outputTPM_with_gene SRR5074121/outputCounts_with_gene
+Rscript transcript_to_gene.r ./Mus_musculus.GRCm39.cdna.all.fa SRR5074186/outputTPM SRR5074186/outputCounts SRR5074186/outputTPM_with_gene SRR5074186/outputCounts_with_gene

@@ -155,5 +155,9 @@ Data is likely unstranded
 
 /mnt/gtklab01/yongshan/project/SailfishBeta-0.10.0_CentOS5/bin/sailfish quant -l IU -i /mnt/gtklab01/yongshan/project/21sept_scn/sailfish_idx -1 <(gunzip -c /mnt/gtklab01/yongshan/project/12oct_jeong/results/SRR5074186/SRR5074186_unmapped_pair1.fq.gz) -2 <(gunzip -c /mnt/gtklab01/yongshan/project/12oct_jeong/results/SRR5074186/SRR5074186_unmapped_pair2.fq.gz) -o /mnt/gtklab01/yongshan/project/12oct_jeong/results/sailfish_out/SRR5074186
 
-# run python script (extract_transcripts_with_counts.py) that takes in a quant.sf file and extracts all transcripts with counts > 0, then sorts them in descending order according to TPM or Readcounts
-python3 extract_transcripts_with_counts.py ./quant.sf ./outputTPM ./outputCounts
+# python script (extract_transcripts_with_counts.py) that takes in a quant.sf file and extracts all transcripts with TPM>=30 and Read count >= 20, then sorts them in descending order according to TPM or Readcounts
+
+python3 extract_transcripts_with_counts.py SRR5074051/quant.sf SRR5074051/outputTPM SRR5074051/outputCounts
+python3 extract_transcripts_with_counts.py SRR5074077/quant.sf SRR5074077/outputTPM SRR5074077/outputCounts
+python3 extract_transcripts_with_counts.py SRR5074121/quant.sf SRR5074121/outputTPM SRR5074121/outputCounts
+python3 extract_transcripts_with_counts.py SRR5074186/quant.sf SRR5074186/outputTPM SRR5074186/outputCounts

@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript --vanilla
 # usage: Rscript transcript_to_gene.r <path_to_cDNA_file> <path_to_outputTPM> <path_to_outputCounts> <path_to_outputTPM_withgenes> <path_to_outputCounts_withgenes>
-# e.g. Rscript transcript_to_gene.r ./Mus_musculus.GRCm39.cdna.all.fa ./outputTPM ./outputCounts
+# e.g. Rscript transcript_to_gene.r ./Mus_musculus.GRCm39.cdna.all.fa ./outputTPM ./outputCounts ./outputTPM_with_gene ./outputCounts_with_gene
 
 args <- commandArgs(trailingOnly=TRUE)
 

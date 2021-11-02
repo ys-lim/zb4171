@@ -1,0 +1,23 @@
+[2021-11-01 16:45:32.123] [jointLog] [info] parsing read library format
+[2021-11-01 16:45:32.214] [jointLog] [info] Loading Quasi index
+[2021-11-01 16:45:39.600] [jointLog] [info] done
+[2021-11-01 16:45:56.308] [jointLog] [info] Gathered fragment lengths from all threads
+[2021-11-01 16:45:56.308] [jointLog] [warning] Sailfish saw fewer then 10000 uniquely mapped reads so 200 will be used as the mean fragment length and 80 as the standard deviation for effective length correction
+[2021-11-01 16:45:56.309] [jointLog] [info] Estimating effective lengths
+[2021-11-01 16:45:56.530] [jointLog] [info] Computed 9685 rich equivalence classes for further processing
+[2021-11-01 16:45:56.530] [jointLog] [info] Counted 79655 total reads in the equivalence classes 
+[2021-11-01 16:45:56.530] [jointLog] [info] Starting optimizer:
+
+[2021-11-01 16:45:56.546] [jointLog] [info] Optimizing over 9685 equivalence classes
+[2021-11-01 16:45:56.550] [jointLog] [info] iteration = 0 | max rel diff. = 474.94
+[2021-11-01 16:45:56.671] [jointLog] [info] iteration = 100 | max rel diff. = 0.0966158
+[2021-11-01 16:45:56.783] [jointLog] [info] iteration = 200 | max rel diff. = 0.0414285
+[2021-11-01 16:45:56.893] [jointLog] [info] iteration = 300 | max rel diff. = 0.0285186
+[2021-11-01 16:45:57.001] [jointLog] [info] iteration = 400 | max rel diff. = 0.0182934
+[2021-11-01 16:45:57.118] [jointLog] [info] iteration = 500 | max rel diff. = 0.0170186
+[2021-11-01 16:45:57.224] [jointLog] [info] iteration = 600 | max rel diff. = 0.0116176
+[2021-11-01 16:45:57.332] [jointLog] [info] iteration = 700 | max rel diff. = 0.0111683
+[2021-11-01 16:45:57.362] [jointLog] [info] iteration = 729 | max rel diff. = 0.00947422
+[2021-11-01 16:45:57.370] [jointLog] [info] Finished optimizer
+[2021-11-01 16:45:57.370] [jointLog] [info] writing output 
+

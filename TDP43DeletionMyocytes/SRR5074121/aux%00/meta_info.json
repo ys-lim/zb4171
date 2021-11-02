@@ -1,0 +1,14 @@
+{
+    "sf_version": "0.10.0",
+    "samp_type": "none",
+    "frag_dist_length": 999,
+    "bias_correct": false,
+    "num_bias_bins": 4096,
+    "num_targets": 117486,
+    "num_bootstraps": 0,
+    "num_processed": 4070067,
+    "num_mapped": 64224,
+    "percent_mapped": 1.5779592817513817,
+    "call": "quant",
+    "start_time": "Mon Nov  1 16:44:21 2021"
+}

@@ -1,0 +1,20 @@
+#Indexing  (I use STAR version 2.7.9):  
+/mnt/cbis/home/yongshan/STAR-2.7.9a/bin/Linux_x86_64/STAR   
+--runMode genomeGenerate      
+--runThreadN 4   
+--genomeDir /mnt/gtklab01/yongshan/Mus_musculus_GENCODE_M27_GRCm39/Mus_musculus_GENCODE_M27_GRCm39_STAR_2.7.9a_index   
+--genomeFastaFiles /mnt/gtklab01/yongshan/Mus_musculus_GENCODE_M27_GRCm39/GRCm39.primary_assembly.genome.fa      
+--sjdbGTFfile /mnt/gtklab01/yongshan/Mus_musculus_GENCODE_M27_GRCm39/gencode.vM27.primary_assembly.annotation.gtf
+
+#Aligning:
+~/STAR-2.7.9a/bin/Linux_x86_64/STAR 
+--runThreadN 12 
+--genomeDir /mnt/gtklab01/linglab/mmusculus_annotation_files/STARv2.7.9a_index_mmusculus_gencode.vM27 
+--readFilesIn /mnt/gtklab01/yongshan/project/12oct_jeong/results/SRR5074121/SRR5074121_unmapped_pair1.fq.gz /mnt/gtklab01/yongshan/project/12oct_jeong/results/SRR5074121/SRR5074121_unmapped_pair2.fq.gz 
+--readFilesCommand zcat 
+--outFileNamePrefix /mnt/gtklab01/yongshan/project/12oct_jeong/results/SRR5074121/SRR5074121_cko1_unmapped_aligned_ 
+--outSAMtype BAM SortedByCoordinate 
+--outSAMattributes Standard 
+--outSAMunmapped Within
+
+#Annotations I got from Gencode version M27 https://www.gencodegenes.org/mouse/. I put new line between every argument so you can read easier, but you should probably remove them before you run it
